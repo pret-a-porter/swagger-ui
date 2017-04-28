@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react"
+import ReportingEvents from '../cian/ReportingEvents'
 
 export default class BaseLayout extends React.Component {
 
@@ -71,6 +72,11 @@ export default class BaseLayout extends React.Component {
             <Row>
               <Col mobile={12} desktop={12} >
                 <Models/>
+              </Col>
+            </Row>
+            <Row>
+              <Col mobile={12} desktop={12} >
+                <ReportingEvents {...this.props} />
               </Col>
             </Row>
           </div>
